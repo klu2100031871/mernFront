@@ -24,7 +24,7 @@ function Login() {
     try 
     {
       console.log("Submitting user:", user);
-      const response = await axios.post("https://backend-9ke8.onrender.com/api/login", user); // Corrected endpoint path
+      const response = await axios.post("https://mernback-gija.onrender.com/api/login", user); // Corrected endpoint path
       console.log("User submitted successfully", response.data);
       toast.success(response.data.message, { position: "top-right" });
       navigate("/");
